@@ -12,6 +12,7 @@ builder.Services.AddDbContext<S22581Context>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPatientService, PatientService>();
+builder.Services.AddScoped<IVisitService, VisitService>();
 
 
 var app = builder.Build();

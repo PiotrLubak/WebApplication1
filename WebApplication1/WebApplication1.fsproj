@@ -9,12 +9,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="VisitController.cs" />
+    <Compile Include="CreateVisitDto.cs" />
+    <None Include="IVisitService.cs" />
+    <None Include="VisitService.cs" />
     <None Include="PatientService.cs" />
     <None Include="VisitDto.cs" />
     <None Include="PatientDto.cs" />
     <None Include="PatientController.cs" />
     <Compile Include="IPatientService.cs" />
-    <None Include="program.cs" />
+    <None Include="Program.cs" />
   </ItemGroup>
 
 </Project>
