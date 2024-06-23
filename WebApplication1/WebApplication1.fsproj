@@ -5,12 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="klasa.cs" />
-    <Compile Include="WeatherForecast.fs" />
-    <Compile Include="Controllers/WeatherForecastController.fs" />
-    <Compile Include="Program.fs" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="PatientService.cs" />
+    <None Include="VisitDto.cs" />
+    <None Include="PatientDto.cs" />
+    <None Include="PatientController.cs" />
+    <Compile Include="IPatientService.cs" />
+    <None Include="program.cs" />
+  </ItemGroup>
 
 </Project>

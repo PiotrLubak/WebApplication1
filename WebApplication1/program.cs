@@ -1,5 +1,6 @@
-using zadanie;
-using zadanie.Models;
+using Api.Abstractions;
+using Api.Models;
+using Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddDbContext<S22581Context>();
-builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IPatientService, PatientService>();
+
 
 var app = builder.Build();
 
